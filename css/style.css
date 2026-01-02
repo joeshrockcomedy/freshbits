@@ -20,7 +20,15 @@ body {
     text-align: center;
 }
 
-.container {
+a {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+.host {
     background-color: rgba(
         0,
         0,
@@ -36,6 +44,15 @@ h1 {
     margin-bottom: 1rem;
 }
 
+h2 {
+    font-size: 2rem;
+    margin-top: 0rem;
+}
+
+h2 a {
+    text-decoration: none;
+}
+
 p {
     font-size: 1.2rem;
 }
@@ -45,14 +62,17 @@ p {
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 1rem;
     border: 3px solid white;
 }
 
-.container-link {
+.host-link {
     text-decoration: none;
     color: inherit;
     display: block; /* Ensures the link wrapping the container behaves like a block */
+}
+
+.host-instagram {
+    color: white;
 }
 
 .links-container {
@@ -75,8 +95,8 @@ p {
 
 .button-link {
     padding: 0.75rem 1.5rem;
-    color: white !important;
-    border-radius: 6px;
+    color: #444 !important;
+    border-radius: 5px;
     text-decoration: none;
     display: inline-flex;
     align-items: center;
@@ -84,25 +104,13 @@ p {
     font-family: sans-serif;
     font-weight: bold;
     transition: background-color 0.3s ease;
-    border: 2px solid transparent;
-    padding-top: 0.6rem;
-    padding-bottom: 0.6rem;
+    background-color: white;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
 }
 
 .button-link:hover {
     opacity: 0.9;
-}
-
-.button-link.instagram {
-    background-color: #e1306c;
-}
-
-.button-link.signup {
-    background-color: #007bff;
-}
-
-.button-link.directions {
-    background-color: #28a745;
 }
 
 .header-logo {
@@ -110,11 +118,6 @@ p {
     max-width: 100%;
     height: auto;
     margin-top: 2rem;
-    margin-bottom: 1rem;
-}
-
-.button-link.guidelines {
-    background-color: #6c757d;
 }
 
 .collapse-panel {
@@ -158,18 +161,39 @@ p {
     transform: rotate(-90deg);
 }
 
-.button-group {
-    border: 2px solid #666;
-    border-radius: 4px;
-    padding: 1.5rem;
+.comedian-button-group {
+    border: 2px solid #e69138;
+    border-radius: 5px;
     display: flex;
     gap: 1rem;
     margin: 0; /* Reset default margin */
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    justify-content: center;
 }
 
-.button-group legend {
+.comedian-button-group legend {
     padding: 0 0.5rem;
-    color: #ccc;
+    color: #e69138;
     font-weight: bold;
-    text-align: left; /* Align legend to the left */
+}
+
+.comedian-button-group p {
+    white-space: pre-line;
+    flex-basis: 100%;
+    margin: 0px;
+    text-align: left;
+}
+
+details {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    width: 500px;
+    max-width: 80%;
+    padding: 5px;
+}
+
+.emphasized {
+    color: #e69138;
 }

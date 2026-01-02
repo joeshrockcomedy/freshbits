@@ -17,36 +17,45 @@
             async
             defer
         ></script>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/collapsible/dist/collapsible.min.css"
+        />
+        <script src="https://cdn.jsdelivr.net/npm/collapsible/dist/collapsible.min.js"></script>
     </head>
     <body>
+        <img src="images/durangocomedy.jpg" alt="" class="header-logo" />
         <img
             src="images/fblogo.png"
             alt="Fresh Bits Logo"
             class="header-logo"
         />
-        <div class="collapse-panel">
-            <div class="panel-header">
-                <span class="panel-title">details</span>
-                <i class="fas fa-chevron-down panel-toggle-icon collapsed"></i>
-            </div>
-            <div class="panel-content collapsed">
-                <p>
-                    Join comedians on the second Thursday of each month as they
-                    debut, practice and refine their craft at The Subterrain; a
-                    local underground performance space, art installation and
-                    specialty cocktail bar. Grab a cocktail, peruse the
-                    differently designed & all one-of-a-kind installation rooms,
-                    listen to some comedy, and enjoy a unique night out in
-                    downtown Durango with no cover charge. Online signup is
-                    encouraged, so comics, make sure to sign up below!
-                </p>
-            </div>
-        </div>
+        <h2>
+            <a href="https://www.thesubterraindurango.com/">@ The Subterrain</a>
+        </h2>
+        <details>
+            <summary>Details</summary>
+            <p>
+                Join comedians on the second Thursday of each month as they
+                debut, practice and refine their craft at
+                <a href="https://www.thesubterraindurango.com/"
+                    >The Subterrain</a
+                >
+                - a local underground performance space, art installation and
+                specialty cocktail bar. Grab a cocktail, peruse the differently
+                designed & all one-of-a-kind installation rooms, listen to some
+                comedy, and enjoy a unique night out in downtown Durango with no
+                cover charge. Online signup is encouraged, so comics, make sure
+                to sign up below!
+            </p>
+            <p class="emphasized">7:00PM • FREE • 18+</p>
+            <p>900 MAIN AVE, SUITE F DURANGO, CO 81301</p>
+        </details>
         <div class="links-container">
             <div class="button-row">
                 <a
                     href="https://www.instagram.com/freshbitsopenmic/"
-                    class="button-link instagram short-button"
+                    class="button-link instagram"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
@@ -55,7 +64,7 @@
                 </a>
                 <a
                     href="https://maps.app.goo.gl/yvpAyTZWj3GnoVP89"
-                    class="button-link directions short-button"
+                    class="button-link directions"
                 >
                     <i class="fas fa-car"></i>
                     <span>Directions</span>
@@ -73,31 +82,38 @@
                     lightMode="bodyScheme"
                 ></add-to-calendar-button>
             </div>
-            <fieldset class="button-group">
+            <fieldset class="comedian-button-group">
                 <legend>Comedians</legend>
+                <p>Online signups prioritized. 6:30pm in-person signups.</p>
+                <p>5-8 MIN SETS • 12 SLOTS</p>
                 <a
-                    href="https://signup.joeshrock.com"
-                    class="button-link signup"
+                    href="https://dash.palform.app/fill/org_0N11DRN7Q3ERV/form_0NF2620W31YSB?f=fat_0NQXETB46PRRA#ak=DF527E863C289BAFF01547FEA852CE1916F2A822"
+                    class="button-link"
                 >
+                    <i class="fa-solid fa-pen"></i>
                     <span>Signup</span>
                 </a>
                 <a
                     href="https://www.durangocomedy.com/policy"
-                    class="button-link guidelines"
+                    class="button-link"
                 >
+                    <i class="fa-regular fa-file"></i>
                     <span>Guidelines</span>
                 </a>
             </fieldset>
         </div>
 
-        <a href="https://joeshrock.com" class="container-link">
-            <div class="container">
+        <a href="https://joeshrock.com" class="host-link">
+            <div class="host">
                 <img
                     src="images/cropped-headshot-1.jpg"
                     alt="Headshot of Joe Shrock"
                     class="headshot"
                 />
-                <p>Hosted by Joe Shrock!</p>
+                <p>
+                    Hosted by Joe Shrock
+                    <i class="fa-brands fa-instagram emphasized"></i>
+                </p>
             </div>
         </a>
         <script src="js/main.js" defer></script>

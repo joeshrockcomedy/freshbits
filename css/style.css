@@ -1,0 +1,75 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: sans-serif;
+    color: white;
+}
+
+body {
+    /* The user needs to provide background.png in the 'images' folder */
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    background-color: rgba(
+        0,
+        0,
+        0,
+        0.5
+    ); /* Semi-transparent background for readability */
+    padding: 2rem 4rem;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+.headshot {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 3px solid white;
+}
+
+.container-link {
+    text-decoration: none;
+    color: inherit;
+    display: block; /* Ensures the link wrapping the container behaves like a block */
+}
+
+.follow-link {
+    margin-top: 1.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #e1306c; /* Instagram-ish pink/purple */
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.follow-link:hover {
+    background-color: #c13584; /* A slightly different shade for hover */
+}

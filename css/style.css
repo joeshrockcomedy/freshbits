@@ -57,18 +57,26 @@ p {
 
 .links-container {
     display: flex;
+    flex-direction: column; /* Stack rows vertically */
+    gap: 1.5rem; /* Increase gap between rows */
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.button-row {
+    display: flex;
     gap: 1rem;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin-bottom: 1.5rem;
-    margin-top: 1.5rem;
 }
 
 .button-link {
     padding: 0.75rem 1.5rem;
     color: white !important;
-    border-radius: 8px;
+    border-radius: 6px;
     text-decoration: none;
     display: inline-flex;
     align-items: center;
@@ -77,6 +85,8 @@ p {
     font-weight: bold;
     transition: background-color 0.3s ease;
     border: 2px solid transparent;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
 }
 
 .button-link:hover {
@@ -97,8 +107,8 @@ p {
 
 .header-logo {
     width: 500px;
-    max-width: 80%; /* Ensure it's responsive on small screens */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 100%;
+    height: auto;
     margin-top: 2rem;
     margin-bottom: 1rem;
 }
@@ -112,7 +122,7 @@ p {
     max-width: 600px;
     margin-bottom: 1.5rem;
     border: 1px solid #444;
-    border-radius: 8px;
+    border-radius: 4px;
     overflow: hidden; /* To keep rounded corners */
 }
 
@@ -146,4 +156,20 @@ p {
 
 .panel-toggle-icon.collapsed {
     transform: rotate(-90deg);
+}
+
+.button-group {
+    border: 2px solid #666;
+    border-radius: 4px;
+    padding: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    margin: 0; /* Reset default margin */
+}
+
+.button-group legend {
+    padding: 0 0.5rem;
+    color: #ccc;
+    font-weight: bold;
+    text-align: left; /* Align legend to the left */
 }

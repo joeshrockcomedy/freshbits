@@ -1,3 +1,20 @@
+* {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Desktop specific styles */
+@media (min-width: 769px) {
+    img.header-logo {
+        max-width: 350px;
+        width: auto;
+        height: auto;
+    }
+}
+
 body,
 html {
     margin: 0;
@@ -13,11 +30,17 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
-    flex-direction: column; /* Arrange items vertically */
-    justify-content: center;
-    align-items: center;
+    display: block;
     text-align: center;
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.header-logo, details, .links-container, .host-link {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 a {
@@ -114,10 +137,10 @@ p {
 }
 
 .header-logo {
-    width: 500px;
     max-width: 100%;
     height: auto;
     margin-top: 2rem;
+    display: block;
 }
 
 .collapse-panel {
@@ -167,9 +190,9 @@ p {
     display: flex;
     gap: 1rem;
     margin: 0; /* Reset default margin */
-    display: flex;
     flex-wrap: wrap;
     width: 500px;
+    max-width: 90%;
     justify-content: center;
 }
 
@@ -190,10 +213,98 @@ details {
     border: 2px solid #ccc;
     border-radius: 5px;
     width: 500px;
-    max-width: 80%;
+    max-width: 90%;
     padding: 5px;
+    box-sizing: border-box;
 }
 
 .emphasized {
     color: #e69138;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+    
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    .header-logo {
+        margin-top: 1rem;
+    }
+    
+    
+    
+    p {
+        font-size: 1rem;
+    }
+    
+    .host {
+        padding: 1rem 2rem;
+        margin: 0 1rem;
+    }
+    
+    .headshot {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .comedian-button-group {
+        width: 90%;
+        max-width: 400px;
+    }
+    
+    details {
+        width: 90%;
+        max-width: 400px;
+    }
+    
+    .button-row {
+        flex-direction: column;
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .button-link {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .links-container {
+        padding: 0 1rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    
+}
+
+@media (max-width: 480px) {
+    .host {
+        padding: 0.75rem 1rem;
+        margin: 0 0.5rem;
+    }
+    
+    .headshot {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .comedian-button-group {
+        width: 95%;
+    }
+    
+    details {
+        width: 95%;
+    }
+    
+    .button-link {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
 }

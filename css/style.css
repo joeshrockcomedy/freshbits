@@ -25,11 +25,11 @@ html {
 }
 
 body {
-    /* The user needs to provide background.png in the 'images' folder */
-    background-color: black;
-    background-position: center;
+    background: url("../images/Background.png");
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     display: block;
     text-align: center;
     width: 100%;
@@ -55,12 +55,6 @@ a:visited {
 }
 
 .host {
-    background-color: rgba(
-        0,
-        0,
-        0,
-        0.5
-    ); /* Semi-transparent background for readability */
     padding: 2rem 4rem;
     border-radius: 10px;
 }
@@ -232,6 +226,7 @@ details {
     }
 
     h2 {
+.
         font-size: 1.5rem;
     }
 

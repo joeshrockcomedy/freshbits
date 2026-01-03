@@ -136,7 +136,8 @@ p {
 .header-logo {
     max-width: 100%;
     height: auto;
-    margin-top: 2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
     display: block;
 }
 
@@ -226,12 +227,26 @@ details {
     }
 
     h2 {
-.
         font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+        margin: 0;
+    }
+
+    .durango-comedy-logo {
+        margin-bottom: 2rem;
+    }
+
+    .fb-logo {
+        margin-bottom: 0;
     }
 
     .header-logo {
-        margin-top: 1rem;
+        margin-top: 0.5rem;
+        max-width: 90%;
     }
 
     p {
